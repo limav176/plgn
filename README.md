@@ -15,13 +15,17 @@ Resumo do projeto
 ** plgn.py
 - Extrai dados da B3 via web scraping
 - Função principal: extract_di_pre() retorna DataFrame com taxas
+
 ** dagAirflow.py
 - DAG do Airflow que orquestra o pipeline
 - 6 tasks: valida dia útil → extrai → valida → transforma → publica → atualiza controle
+
 ** test_plgn.py
 - Testa a função extract_di_pre() isoladamente
+
 ** test_dag_simples.py
 - Testa o pipeline completo sem Airflow (simula as tasks)
+
 ** test_dag.py
 - Teste completo simulando contexto do Airflow
 
