@@ -7,21 +7,23 @@ Script Python para extração automatizada da curva de taxas **DI x Pré** da B3
 Este projeto é uma **Proof of Concept (PoC)** que realiza web scraping da página da B3 para extrair dados da curva de taxas de referência DI x Pré, retornando os dados estruturados em um DataFrame do pandas.
 
 Resumo do projeto
-Objetivo
-Pipeline ETL para extrair taxas de referência (DI x Pré) da B3 e processá-las em camadas (Bronze → Silver → Gold).
-Arquivos principais
-plgn.py
-Extrai dados da B3 via web scraping
-Função principal: extract_di_pre() retorna DataFrame com taxas
-dagAirflow.py
-DAG do Airflow que orquestra o pipeline
-6 tasks: valida dia útil → extrai → valida → transforma → publica → atualiza controle
-test_plgn.py
-Testa a função extract_di_pre() isoladamente
-test_dag_simples.py
-Testa o pipeline completo sem Airflow (simula as tasks)
-test_dag.py
-Teste completo simulando contexto do Airflow
+
+## Objetivo
+- Pipeline ETL para extrair taxas de referência (DI x Pré) da B3 e processá-las em camadas (Bronze → Silver → Gold).
+
+## Arquivos 
+** plgn.py
+- Extrai dados da B3 via web scraping
+- Função principal: extract_di_pre() retorna DataFrame com taxas
+** dagAirflow.py
+- DAG do Airflow que orquestra o pipeline
+- 6 tasks: valida dia útil → extrai → valida → transforma → publica → atualiza controle
+** test_plgn.py
+- Testa a função extract_di_pre() isoladamente
+** test_dag_simples.py
+- Testa o pipeline completo sem Airflow (simula as tasks)
+** test_dag.py
+- Teste completo simulando contexto do Airflow
 
 ##  Funcionalidades
 
