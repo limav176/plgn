@@ -48,7 +48,6 @@ def extract_di_pre(data_base: date) -> pd.DataFrame:
 
     return pd.DataFrame(dados)
 
-
 if __name__ == "__main__":
     # Exemplo de uso
     from datetime import date, timedelta
