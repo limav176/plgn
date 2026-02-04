@@ -1,5 +1,6 @@
 """
 Script de teste para a função extract_di_pre
+
 """
 from datetime import date, timedelta
 from plgn import extract_di_pre
