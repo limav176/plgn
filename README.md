@@ -80,7 +80,7 @@ O DataFrame deve retonar:
 | `vertice_dias` | int | Vértice em dias |
 | `taxa` | float | Taxa de referência |
 
-### Exemplo de Saída
+### Exemplo de Saída (HIPOTESE)
 
 ```
    curva data_base  vertice_dias    taxa
