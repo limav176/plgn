@@ -1,10 +1,10 @@
 # Case - Extrator de Curva - B3
 
-Script Python para extração automatizada da curva de taxas **DI x Pré** da B3 (Bolsa de Valores brasileira).
+Script Python para extração automatizada da curva de taxas DI x Pré da B3 (Bolsa de Valores brasileira).
 
 ## Sobre o Projeto
 
-Este projeto é uma **Proof of Concept (PoC)** que realiza web scraping da página da B3 para extrair dados da curva de taxas de referência DI x Pré, retornando os dados estruturados em um DataFrame do pandas.
+Este projeto é uma **(PoC)** que realiza web scraping da página da B3 para extrair dados da curva de taxas de referência DI x Pré, retornando os dados estruturados em um DataFrame do pandas.
 
 Resumo do projeto
 
