@@ -1,34 +1,51 @@
-# 📊 Extrator de Curva DI x Pré - B3
+# Extrator de Curva DI x Pré - B3
 
 Script Python para extração automatizada da curva de taxas **DI x Pré** da B3 (Bolsa de Valores brasileira).
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Este projeto é uma **Proof of Concept (PoC)** que realiza web scraping da página da B3 para extrair dados da curva de taxas de referência DI x Pré, retornando os dados estruturados em um DataFrame do pandas.
 
-## ✨ Funcionalidades
+Resumo do projeto
+Objetivo
+Pipeline ETL para extrair taxas de referência (DI x Pré) da B3 e processá-las em camadas (Bronze → Silver → Gold).
+Arquivos principais
+plgn.py
+Extrai dados da B3 via web scraping
+Função principal: extract_di_pre() retorna DataFrame com taxas
+dagAirflow.py
+DAG do Airflow que orquestra o pipeline
+6 tasks: valida dia útil → extrai → valida → transforma → publica → atualiza controle
+test_plgn.py
+Testa a função extract_di_pre() isoladamente
+test_dag_simples.py
+Testa o pipeline completo sem Airflow (simula as tasks)
+test_dag.py
+Teste completo simulando contexto do Airflow
 
-- 🔍 Extração automatizada da curva DI x Pré da B3
-- 📅 Suporte para qualquer data-base válida
-- 📊 Retorno em formato DataFrame (pandas)
-- ⚡ Implementação simples e direta
-- 🛡️ Tratamento básico de erros HTTP
+##  Funcionalidades
 
-## 🛠️ Tecnologias Utilizadas
+-  Extração automatizada da curva DI x Pré da B3
+-  Suporte para qualquer data-base válida
+-  Retorno em formato DataFrame (pandas)
+-  Implementação simples e direta
+-  Tratamento básico de erros HTTP
+
+## Tecnologias Utilizadas
 
 - **Python 3.9+**
 - **requests** - Requisições HTTP
 - **pandas** - Manipulação de dados
 - **BeautifulSoup4** - Parsing de HTML
 
-## 📦 Pré-requisitos
+## Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado:
 
 - Python 3.9 ou superior
 - pip (gerenciador de pacotes Python)
 
-## 🚀 Instalação
+## Instalação
 
 1. Clone o repositório ou baixe os arquivos
 
@@ -95,16 +112,16 @@ O DataFrame retornado contém as seguintes colunas:
 4. **Extração**: Localiza a tabela e extrai os dados linha por linha
 5. **Transformação**: Converte os dados em DataFrame estruturado
 
-## ⚠️ Observações Importantes
+##  Observações Importantes
 
-- ⚠️ Requer **conexão com internet** (faz requisição HTTP)
+-  Requer **conexão com internet** (faz requisição HTTP)
 
-## 📄 Licença
+##  Licença
 
-Este projeto é uma PoC.
+Este projeto é uma PoC. Desenvolvido como parte de entrega em candidatura a vaga de engenheiro de dados.
 
-## 👤 Autor
+## Autor
+limav176
 
-Desenvolvido como parte de entrega em candidatura 
 
 
