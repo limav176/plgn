@@ -22,13 +22,13 @@ def validate_raw(**context):
   # passei a funcao vazia aqui, propositalmente
 def transform_to_silver(**context):
     pass
-
+  # passei a funcao vazia aqui, propositalmente
 def publish_gold(**context):
     pass
-
+  # passei a funcao vazia aqui, propositalmente
 def update_control_table(**context):
     pass
-
+  # passei a funcao vazia aqui, propositalmente
 with DAG(
     dag_id="pipeline_taxas_referenciais_b3",
     start_date=datetime(2015, 1, 1, tzinfo=local_tz),
