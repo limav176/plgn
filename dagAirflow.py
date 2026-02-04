@@ -19,7 +19,7 @@ def extract_taxas(**context):
 
 def validate_raw(**context):
     pass
-
+  # passei a funcao vazia aqui, propositalmente
 def transform_to_silver(**context):
     pass
 
