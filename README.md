@@ -1,4 +1,4 @@
-# Extrator de Curva DI x Pré - B3
+# Case - Extrator de Curva - B3
 
 Script Python para extração automatizada da curva de taxas **DI x Pré** da B3 (Bolsa de Valores brasileira).
 
