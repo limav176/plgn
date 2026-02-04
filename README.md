@@ -64,15 +64,14 @@ pip install -r requirements.txt
 ### Executar diretamente
 
 ```bash
-python plgn.py
+python test_dag_simples.py
 ```
 
-O script irá extrair os dados.
 
 
 ## Estrutura dos Dados
 
-O DataFrame retornado contém as seguintes colunas:
+O DataFrame deve retonar:
 
 | Coluna | Tipo | Descrição |
 |--------|------|-----------|
@@ -113,6 +112,7 @@ O DataFrame retornado contém as seguintes colunas:
 ##  Observações Importantes
 
 -  Requer **conexão com internet** (faz requisição HTTP)
+-  Requer conectividade fora de ssl (testei tendo ssl mas deu ruim hehe [ver evidência])
 
 ##  Licença
 
