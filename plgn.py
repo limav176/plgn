@@ -58,6 +58,6 @@ if __name__ == "__main__":
     print(f"Extraindo curva DI x Pré para: {data_teste}")
     df = extract_di_pre(data_teste)
     
-    print(f"\n✅ Extraídos {len(df)} registros")
-    print("\nPrimeiras linhas:")
+    print(f"\n Extraídos {len(df)} registros")
+    print("\n Primeiras linhas:")
     print(df.head())
