@@ -4,10 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import date
 
 B3_URL = (
-    "https://www.b3.com.br/pt_br/market-data-e-indices/"
-    "servicos-de-dados/market-data/consultas/"
-    "mercado-de-derivativos/precos-referenciais/"
-    "taxas-referenciais-bm-fbovespa/"
+    "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-de-derivativos/precos-referenciais/taxas-referenciais-bm-fbovespa/"
 )
 
 def extract_di_pre(data_base: date) -> pd.DataFrame:
