@@ -79,8 +79,6 @@ def extract_di_pre(data_base: date) -> pd.DataFrame:
             
             if "taxa" in response.text.lower() or "di" in response.text.lower():
                 print("   ⚠️  HTML contém palavras-chave, mas tabela não foi encontrada")
-                print("   💡 A página pode carregar dados via JavaScript")
-                print("   💡 Solução: Use Selenium ou aguarde carregamento JavaScript")
             
             print("\n   ⚠️  MODO POC: Retornando dados mock para demonstração")
             return _gerar_dados_mock(data_base)
@@ -150,7 +148,6 @@ def _gerar_dados_mock(data_base: date) -> pd.DataFrame:
         })
     
     print("   ⚠️  ATENÇÃO: Dados MOCK retornados (não são dados reais da B3)")
-    print("   💡 Para dados reais, a página precisa carregar via JavaScript (use Selenium)")
     
     return pd.DataFrame(dados)
 
