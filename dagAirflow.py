@@ -67,9 +67,4 @@ with DAG(
         python_callable=publish_gold,
     )
 
-    control = PythonOperator(
-        task_id="update_control_table",
-        python_callable=update_control_table,
-    )
-
-    check_day >> extract >> validate >> silver >> gold >> control
+    check_day >> extract >> validate >> silver >> gold 
